@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/leobv/mws-restaurant-stage-1/issues"
   },
-  "homepage": "https://github.com/leobv/mws-restaurant-stage-1#readme"
+  "homepage": "https://github.com/leobv/mws-restaurant-stage-1#readme",
+  "dependencies": {
+    "python": "0.0.4"
+  }
 }
