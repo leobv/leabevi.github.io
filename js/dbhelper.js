@@ -9,7 +9,7 @@
    */
   static get DATABASE_URL() {
     const port = 8000 // Change this to your server port
-    return `https://leabevi.github.io/data/restaurants.json`;
+    return `http://leabevi.github.io/data/restaurants.json`;
   }
 
   /**
