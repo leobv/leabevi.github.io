@@ -1,14 +1,14 @@
 /**
  * Common database helper functions.
  */
-class DBHelper {
+ class DBHelper {
 
   /**
    * Database URL.
    * Change this to restaurants.json file location on your server.
    */
   static get DATABASE_URL() {
-    const port = 61906 // Change this to your server port
+    const port =55502 // Change this to your server port
     return `http://localhost:${port}/data/restaurants.json`;
   }
 
