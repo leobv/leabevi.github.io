@@ -8,8 +8,8 @@
    * Change this to restaurants.json file location on your server.
    */
   static get DATABASE_URL() {
-    const port =55502 // Change this to your server port
-    return `http://localhost:${port}/data/restaurants.json`;
+    const port = 8000 // Change this to your server port
+    return `https://leabevi.github.io/data/restaurants.json`;
   }
 
   /**
