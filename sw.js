@@ -1,4 +1,4 @@
-const staticCacheName = 'restaurant-reviews-stage1-v1';
+const staticCacheName = 'restaurant-reviews-stage1';
 
 self.addEventListener('install', (e) => {
 
@@ -26,7 +26,7 @@ self.addEventListener('install', (e) => {
 	];
 
 	 e.waitUntil(
-	    // Open a cache named 'restaurant-reviews-stage1-v1'
+	    // Open a cache named 'restaurant-reviews-stage1'
 	    // Add cache the urls from urlsToCache.
 	    caches.open(staticCacheName).then((cache) => {
 	    	self.currCache = cache;
@@ -44,8 +44,8 @@ self.addEventListener('activate', (e) => {
 			//To wait on completion of all those promises. 
 			return Promise.all(
 				cacheNames.filter((cacheName) => {
-					//Find the cache with name that starts with 'restaurant-reviews-stage1-'
-					return cacheName.startsWith('restaurant-reviews-stage1-') && cacheName != staticCacheName;
+					//Find the cache with name that starts with 'restaurant-reviews-stage1'
+					return cacheName.startsWith('restaurant-reviews-stage1') && cacheName != staticCacheName;
 				}).map((cacheName) => {
 					//Delete the old cache if found.
 					return caches.delete(cacheName);
